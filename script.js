@@ -21,3 +21,14 @@ window.addEventListener('scroll', () => {
 const modal = document.getElementById('videoModal');
 document.getElementById('playVideo').addEventListener('click', () => { modal.classList.add('active'); });
 modal.addEventListener('click', () => { modal.classList.remove('active'); });
+
+// ---------- 新增：显示额外信息 ----------
+const showInfoButtons = document.querySelectorAll('.show-info');
+
+showInfoButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const extra = btn.nextElementSibling;
+    if(extra) extra.classList.toggle('show');
+    btn.textContent = extra.classList.contains('show') ? '收起信息' : '查看更多';
+  });
+});
