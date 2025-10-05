@@ -1,40 +1,15 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>缅甸旅游官网 - 高级版</title>
-<link href="style.css" rel="stylesheet">
-</head>
-<body>
-
-<!-- Hero轮播 -->
-<div class="hero">
-  <div class="slider">
-    <div class="slide" style="background-image:url('bagan.jpg');"></div>
-    <div class="slide" style="background-image:url('inlel-ake.jpg');"></div>
-    <div class="slide" style="background-image:url('yangon.jpg');"></div>
-  </div>
-  <header>
-    <nav>
-      <a href="#bagan">蒲甘</a>
-      <a href="#inle">茵莱湖</a>
-      <a href="#yangon">仰光</a>
-    </nav>
-  </header>
-  <div class="hero-content">
-    <h1>发现缅甸之美</h1>
-    <p>寺庙 | 湖泊 | 文化</p>
-    <button id="playVideo">观看介绍视频</button>
-  </div>
-</div>
-
 <!-- 蒲甘 -->
 <section id="bagan" class="section-bagan">
   <div class="content">
     <div class="text">
       <h2>蒲甘寺庙群</h2>
       <p>拥有上千座佛塔和寺庙，清晨乘热气球游览，是一次难忘的体验。</p>
+      <!-- 新增按钮和信息 -->
+      <button class="show-info">查看更多</button>
+      <div class="extra-info">
+        <p><strong>历史：</strong>蒲甘寺庙群始建于11世纪，是缅甸佛教文化的重要遗产。</p>
+        <p><strong>最佳旅游时间：</strong>10月至次年2月，天气凉爽干燥。</p>
+      </div>
     </div>
     <div class="image">
       <img src="bagan.jpg" alt="蒲甘寺庙">
@@ -51,6 +26,12 @@
     <div class="text">
       <h2>茵莱湖风光</h2>
       <p>独特的单脚划船渔夫和湖上村庄闻名，还有手工艺市场和跳鱼表演。</p>
+      <!-- 新增按钮和信息 -->
+      <button class="show-info">查看更多</button>
+      <div class="extra-info">
+        <p><strong>历史：</strong>茵莱湖周边村落有数百年历史，以渔业和手工艺闻名。</p>
+        <p><strong>最佳旅游时间：</strong>11月至次年2月，湖面景色最佳。</p>
+      </div>
     </div>
   </div>
 </section>
@@ -61,23 +42,18 @@
     <div class="text">
       <h2>仰光大金塔</h2>
       <p>缅甸最著名的佛教圣地，金光闪闪的塔身和周边庙宇体现了浓厚的宗教文化。</p>
+      <!-- 新增按钮和信息 -->
+      <button class="show-info">查看更多</button>
+      <div class="extra-info">
+        <p><strong>历史：</strong>大金塔建于6世纪，经过多次扩建，是缅甸佛教信仰中心。</p>
+        <p><strong>最佳旅游时间：</strong>11月至次年2月，适合观光与拍照。</p>
+      </div>
     </div>
     <div class="image">
       <img src="yangon.jpg" alt="仰光大金塔">
     </div>
   </div>
 </section>
-
-<footer>&copy;2025 缅甸旅游官网 | 版权所有</footer>
-
-<!-- 视频弹窗 -->
-<div class="modal" id="videoModal">
-  <video controls src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
 
 
 
